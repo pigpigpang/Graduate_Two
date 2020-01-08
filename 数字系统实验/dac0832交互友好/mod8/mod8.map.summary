@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 31 20:56:41 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : mod8
+Top-level Entity Name : mod8
+Family : Cyclone II
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,52 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+
+entity Yinpin is
+port(clk:IN STD_LOGIC;
+       a:IN STD_LOGIC_vector (3 downto 0);
+     yinpin2  : OUT STD_LOGIC;
+     yinpin4  : OUT STD_LOGIC;
+     yinpin8  : OUT STD_LOGIC;
+     yinpin16 : OUT STD_LOGIC);
+end Yinpin;
+
+architecture rtl of Yinpin is
+signal count :STD_LOGIC_VECTOR(3 DOWNTO 0);
+begin
+     process(clk)
+     begin
+        if (clk'event and clk='1') then
+           if(count="1111") then
+             Count <= (others =>'0' );
+           else
+             Count <=Count+1;
+           end if;
+         end if;
+ end process;
+ process(a,count)
+ begin
+    if a="0001" then
+       yinpin2 <= count(0);
+       yinpin4<='0';
+       yinpin8<='0';
+       yinpin16<='0';
+    elsif a="0010" then  
+       yinpin4 <= count(1);    
+       yinpin2<='0';
+       yinpin8<='0';
+       yinpin16<='0';
+    elsif a="0100" then
+       yinpin8 <= count(2);
+       yinpin4<='0';
+       yinpin16<='0';
+       yinpin2<='0';
+    else
+       yinpin16 <= count(3);
+       yinpin4<='0';
+       yinpin2<='0';
+       yinpin8<='0' ;
+    end if;
+end process;
+end rtl;

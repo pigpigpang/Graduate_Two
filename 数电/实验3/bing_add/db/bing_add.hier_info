@@ -1,0 +1,61 @@
+|bing_add
+A[3] => all_add:g0.x
+A[2] => all_add:g1.x
+A[1] => all_add:g2.x
+A[0] => all_add:g3.x
+B[3] => all_add:g0.y
+B[2] => all_add:g1.y
+B[1] => all_add:g2.y
+B[0] => all_add:g3.y
+cin => all_add:g0.z
+S[3] <= all_add:g0.s
+S[2] <= all_add:g1.s
+S[1] <= all_add:g2.s
+S[0] <= all_add:g3.s
+C <= all_add:g3.c
+
+
+|bing_add|all_add:g0
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bing_add|all_add:g1
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bing_add|all_add:g2
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bing_add|all_add:g3
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

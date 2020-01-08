@@ -1,0 +1,236 @@
+Simulator report for pcjoq
+Fri Dec 20 14:35:10 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 65 nodes     ;
+; Simulation Coverage         ;      93.85 % ;
+; Total Number of Transitions ; 427          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.85 % ;
+; Total nodes checked                                 ; 65           ;
+; Total output ports checked                          ; 65           ;
+; Total output ports with complete 1/0-value coverage ; 61           ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 3            ;
+; Total output ports with no 0-value coverage         ; 4            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------+
+; Complete 1/0-Value Coverage                           ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |pcjoq|tem[1]   ; |pcjoq|tem[1]    ; regout           ;
+; |pcjoq|tem[0]   ; |pcjoq|tem[0]    ; regout           ;
+; |pcjoq|tem~4    ; |pcjoq|tem~4     ; out              ;
+; |pcjoq|tem~5    ; |pcjoq|tem~5     ; out              ;
+; |pcjoq|tem~6    ; |pcjoq|tem~6     ; out              ;
+; |pcjoq|tem~7    ; |pcjoq|tem~7     ; out              ;
+; |pcjoq|tem~8    ; |pcjoq|tem~8     ; out              ;
+; |pcjoq|tem~9    ; |pcjoq|tem~9     ; out              ;
+; |pcjoq|tem~10   ; |pcjoq|tem~10    ; out              ;
+; |pcjoq|tem~11   ; |pcjoq|tem~11    ; out              ;
+; |pcjoq|tem~12   ; |pcjoq|tem~12    ; out              ;
+; |pcjoq|tem~13   ; |pcjoq|tem~13    ; out              ;
+; |pcjoq|tem~14   ; |pcjoq|tem~14    ; out              ;
+; |pcjoq|tem~15   ; |pcjoq|tem~15    ; out              ;
+; |pcjoq|tem~16   ; |pcjoq|tem~16    ; out              ;
+; |pcjoq|tem~17   ; |pcjoq|tem~17    ; out              ;
+; |pcjoq|tem~18   ; |pcjoq|tem~18    ; out              ;
+; |pcjoq|tem~19   ; |pcjoq|tem~19    ; out              ;
+; |pcjoq|tem~20   ; |pcjoq|tem~20    ; out              ;
+; |pcjoq|tem~21   ; |pcjoq|tem~21    ; out              ;
+; |pcjoq|tem~22   ; |pcjoq|tem~22    ; out              ;
+; |pcjoq|tem~23   ; |pcjoq|tem~23    ; out              ;
+; |pcjoq|tem[2]   ; |pcjoq|tem[2]    ; regout           ;
+; |pcjoq|tem[3]   ; |pcjoq|tem[3]    ; regout           ;
+; |pcjoq|tem[4]   ; |pcjoq|tem[4]    ; regout           ;
+; |pcjoq|tem[5]   ; |pcjoq|tem[5]    ; regout           ;
+; |pcjoq|tem[6]   ; |pcjoq|tem[6]    ; regout           ;
+; |pcjoq|tem[7]   ; |pcjoq|tem[7]    ; regout           ;
+; |pcjoq|a[0]     ; |pcjoq|a[0]      ; out              ;
+; |pcjoq|a[1]     ; |pcjoq|a[1]      ; out              ;
+; |pcjoq|a[2]     ; |pcjoq|a[2]      ; out              ;
+; |pcjoq|a[3]     ; |pcjoq|a[3]      ; out              ;
+; |pcjoq|a[4]     ; |pcjoq|a[4]      ; out              ;
+; |pcjoq|a[5]     ; |pcjoq|a[5]      ; out              ;
+; |pcjoq|a[6]     ; |pcjoq|a[6]      ; out              ;
+; |pcjoq|a[7]     ; |pcjoq|a[7]      ; out              ;
+; |pcjoq|ld       ; |pcjoq|ld        ; out              ;
+; |pcjoq|inc      ; |pcjoq|inc       ; out              ;
+; |pcjoq|clk      ; |pcjoq|clk       ; out              ;
+; |pcjoq|c[0]     ; |pcjoq|c[0]      ; pin_out          ;
+; |pcjoq|c[1]     ; |pcjoq|c[1]      ; pin_out          ;
+; |pcjoq|c[2]     ; |pcjoq|c[2]      ; pin_out          ;
+; |pcjoq|c[3]     ; |pcjoq|c[3]      ; pin_out          ;
+; |pcjoq|c[4]     ; |pcjoq|c[4]      ; pin_out          ;
+; |pcjoq|c[5]     ; |pcjoq|c[5]      ; pin_out          ;
+; |pcjoq|c[6]     ; |pcjoq|c[6]      ; pin_out          ;
+; |pcjoq|c[7]     ; |pcjoq|c[7]      ; pin_out          ;
+; |pcjoq|Add0~0   ; |pcjoq|Add0~0    ; out0             ;
+; |pcjoq|Add0~1   ; |pcjoq|Add0~1    ; out0             ;
+; |pcjoq|Add0~2   ; |pcjoq|Add0~2    ; out0             ;
+; |pcjoq|Add0~3   ; |pcjoq|Add0~3    ; out0             ;
+; |pcjoq|Add0~4   ; |pcjoq|Add0~4    ; out0             ;
+; |pcjoq|Add0~5   ; |pcjoq|Add0~5    ; out0             ;
+; |pcjoq|Add0~6   ; |pcjoq|Add0~6    ; out0             ;
+; |pcjoq|Add0~7   ; |pcjoq|Add0~7    ; out0             ;
+; |pcjoq|Add0~8   ; |pcjoq|Add0~8    ; out0             ;
+; |pcjoq|Add0~9   ; |pcjoq|Add0~9    ; out0             ;
+; |pcjoq|Add0~10  ; |pcjoq|Add0~10   ; out0             ;
+; |pcjoq|Add0~11  ; |pcjoq|Add0~11   ; out0             ;
+; |pcjoq|Add0~12  ; |pcjoq|Add0~12   ; out0             ;
+; |pcjoq|Equal0~0 ; |pcjoq|Equal0~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------+
+; Missing 1-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |pcjoq|tem~0 ; |pcjoq|tem~0     ; out              ;
+; |pcjoq|tem~1 ; |pcjoq|tem~1     ; out              ;
+; |pcjoq|tem~2 ; |pcjoq|tem~2     ; out              ;
++--------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------+
+; Missing 0-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |pcjoq|tem~0 ; |pcjoq|tem~0     ; out              ;
+; |pcjoq|tem~1 ; |pcjoq|tem~1     ; out              ;
+; |pcjoq|tem~2 ; |pcjoq|tem~2     ; out              ;
+; |pcjoq|tem~3 ; |pcjoq|tem~3     ; out              ;
++--------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 20 14:35:10 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pcjoq -c pcjoq
+Info: Using vector source file "C:/Users/pigpigpang/Desktop/愿太阳温暖你的心/数电/实验4/pcjoq/pcjoq.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|pcjoq|tem[0]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[1]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[2]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[3]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[4]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[5]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[6]"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|pcjoq|tem[7]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.85 %
+Info: Number of transitions in simulation is 427
+Info: Quartus II Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Fri Dec 20 14:35:10 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,6 @@
+|sit
+en => tem.ENA
+clk => tem.CLK
+Z <= tem.DB_MAX_OUTPUT_PORT_TYPE
+
+

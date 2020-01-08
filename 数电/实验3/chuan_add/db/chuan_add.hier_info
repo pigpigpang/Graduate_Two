@@ -1,0 +1,24 @@
+|chuan_add
+a[0] => temp~0.IN0
+a[0] => sum~0.IN0
+a[1] => temp~2.IN0
+a[1] => temp~1.IN0
+a[2] => temp~5.IN0
+a[2] => temp~4.IN0
+a[3] => temp~8.IN0
+a[3] => temp~7.IN0
+b[0] => temp~0.IN1
+b[0] => sum~0.IN1
+b[1] => temp~2.IN1
+b[1] => temp~1.IN1
+b[2] => temp~5.IN1
+b[2] => temp~4.IN1
+b[3] => temp~8.IN1
+b[3] => temp~7.IN1
+c <= temp~10.DB_MAX_OUTPUT_PORT_TYPE
+sum[0] <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum~2.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

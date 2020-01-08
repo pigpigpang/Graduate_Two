@@ -1,0 +1,30 @@
+|dex_add
+d[0] => index_add:g0.cin[0]
+d[1] => index_add:g0.cin[1]
+d[2] => index_add:g0.cin[2]
+d[3] => index_add:g0.cin[3]
+d[4] => index_add:g0.cin[4]
+d[5] => index_add:g0.cin[5]
+d[6] => index_add:g0.cin[6]
+d[7] => index_add:g0.cin[7]
+se[0] => index_add:g0.sel[0]
+se[1] => index_add:g0.sel[1]
+se[2] => index_add:g0.sel[2]
+dout <= index_add:g0.cout
+
+
+|dex_add|index_add:g0
+cin[0] => Mux0.IN7
+cin[1] => Mux0.IN6
+cin[2] => Mux0.IN5
+cin[3] => Mux0.IN4
+cin[4] => Mux0.IN3
+cin[5] => Mux0.IN2
+cin[6] => Mux0.IN1
+cin[7] => Mux0.IN0
+sel[0] => Mux0.IN10
+sel[1] => Mux0.IN9
+sel[2] => Mux0.IN8
+cout <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

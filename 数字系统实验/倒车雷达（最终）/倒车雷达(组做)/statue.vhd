@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity statue is
+port(dis:in integer range 0 to 500;
+     q:out STD_LOGIC_VECTOR(3 downto 0));  
+end statue;
+architecture fun of statue is
+begin
+process(dis)
+    begin
+        
+            IF (dis=0) THEN q<="0000";
+            ELSIF (dis>0 )and(dis<=50) THEN q<="0001";
+            ELSIF (dis>50 )and( dis<=100) THEN q<="0010";
+            ELSIF (dis>100 )and(dis<=150) THEN q<="0100";
+            ELSIF (dis>150 ) THEN q<="1000";
+            ELSE q<="0000";         
+        end IF;    
+    end process;
+end fun;            

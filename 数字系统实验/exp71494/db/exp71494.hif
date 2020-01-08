@@ -1,0 +1,62 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74194
+# storage
+db|exp71494.(1).cnf
+db|exp71494.(1).cnf
+# case_insensitive
+# source_file
+d:|quartusii 9.0|quartus|libraries|others|maxplus2|74194.bdf
+efddb3c18ee8b2edae5334dcb8570fe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74194:inst
+}
+# macro_sequence
+
+# end
+# entity
+exp71494
+# storage
+db|exp71494.(0).cnf
+db|exp71494.(0).cnf
+# case_insensitive
+# source_file
+exp71494.bdf
+ab12326f8894077a16d126cd91d0b0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

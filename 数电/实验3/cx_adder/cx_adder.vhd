@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity cx_adder is
+port(in1,clk1 : in std_logic;
+	output1 : out std_logic_vector(3 downto 0)
+	);
+end cx_adder;
+architecture rtl of cx_adder is
+component ywjcq_4
+	port(
+		SI,clk : in std_logic;
+		SO : out std_logic;
+		output : out std_logic_vector(3 downto 0)
+		);
+end component;
+component dcqf
+	port(
+		D,C: in std_logic;
+		q : out std_logic
+		);
+end component;
+component full_adder
+	port(
+		x,y,z: in std_logic;
+		s,c: out std_logic
+		);
+end component;
+signal jc0,jc1,add_s,add_c,dc : std_logic;
+begin
+	g0 : ywjcq_4 port map(add_s,clk1,jc0,output1);
+	g1 : ywjcq_4 port map(in1,clk1,jc1);
+	g2 : full_adder port map(jc0,jc1,dc,add_s,add_c);
+	g3 : dcqf port map(add_c,clk1,dc);
+end rtl;

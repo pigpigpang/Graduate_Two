@@ -1,0 +1,84 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+decoder3_8
+# storage
+db|decoder3_8.(0).cnf
+db|decoder3_8.(0).cnf
+# case_insensitive
+# source_file
+decoder3_8.bdf
+c82adf68c01f129a6236535222d512f2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+decoder2_4
+# storage
+db|decoder3_8.(1).cnf
+db|decoder3_8.(1).cnf
+# case_insensitive
+# source_file
+decoder2_4.bdf
+b8a424d9c8df962a9e5ddc1ad311c5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decoder2_4:inst10
+}
+# macro_sequence
+
+# end
+# entity
+decoder1_2
+# storage
+db|decoder3_8.(2).cnf
+db|decoder3_8.(2).cnf
+# case_insensitive
+# source_file
+decoder1_2.bdf
+3b13b7b082b2b0b999e7f8163d1f8683
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decoder2_4:inst10|decoder1_2:inst
+decoder2_4:inst10|decoder1_2:inst1
+decoder1_2:inst
+}
+# macro_sequence
+
+# end
+# complete
+

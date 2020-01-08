@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity trig is
+      port(clk:in std_logic;
+           trig,ql:out std_logic);
+end entity trig;
+
+architecture arch of trig is
+signal count:std_logic_vector(15 downto 0);
+ begin 
+ process(clk)
+   begin
+   if(clk'event and clk='1') then 
+        if(count="1111111111111111")then
+			count<="0000000000000000";
+			ql<='1';
+		else 
+			count<=count+1;
+			ql<='0';
+		end if;
+   end if;
+   end process;
+  process(clk)
+   begin
+   if(clk'event and clk='1') then 
+        if(count="0000000000000000")then
+        trig<='1';
+        elsif(count="0000000000111111")then
+        trig<='0';
+   
+   end if;
+   end if;
+   end process;  
+end arch;

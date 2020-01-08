@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity index_add is
+generic (n: integer := 3);
+port(cin: in std_logic_vector (2**n-1 downto 0);
+     sel: in std_logic_vector (n-1 downto 0);
+    cout: out std_logic);
+end index_add;
+
+architecture rtl of index_add is
+begin 
+	cout <= cin(conv_integer(sel));
+end rtl;

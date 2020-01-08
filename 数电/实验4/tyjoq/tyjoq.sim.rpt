@@ -1,0 +1,258 @@
+Simulator report for tyjoq
+Tue Dec 10 11:12:24 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 95 nodes     ;
+; Simulation Coverage         ;      48.05 % ;
+; Total Number of Transitions ; 553          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      48.05 % ;
+; Total nodes checked                                 ; 95           ;
+; Total output ports checked                          ; 77           ;
+; Total output ports with complete 1/0-value coverage ; 37           ;
+; Total output ports with no 1/0-value coverage       ; 20           ;
+; Total output ports with no 1-value coverage         ; 22           ;
+; Total output ports with no 0-value coverage         ; 38           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                 ;
++--------------------+---------------------+------------------+
+; Node Name          ; Output Port Name    ; Output Port Type ;
++--------------------+---------------------+------------------+
+; |tyjoq|ao[0]~26    ; |tyjoq|ao[0]~26     ; combout          ;
+; |tyjoq|ao[1]~28    ; |tyjoq|ao[1]~28     ; combout          ;
+; |tyjoq|a[4]        ; |tyjoq|a[4]         ; regout           ;
+; |tyjoq|ao[4]~31    ; |tyjoq|ao[4]~31     ; combout          ;
+; |tyjoq|a[5]        ; |tyjoq|a[5]         ; regout           ;
+; |tyjoq|ao[5]~32    ; |tyjoq|ao[5]~32     ; combout          ;
+; |tyjoq|a[6]        ; |tyjoq|a[6]         ; regout           ;
+; |tyjoq|ao[6]~33    ; |tyjoq|ao[6]~33     ; combout          ;
+; |tyjoq|a[7]        ; |tyjoq|a[7]         ; regout           ;
+; |tyjoq|ao[7]~34    ; |tyjoq|ao[7]~34     ; combout          ;
+; |tyjoq|bo[0]~26    ; |tyjoq|bo[0]~26     ; combout          ;
+; |tyjoq|bo[1]~28    ; |tyjoq|bo[1]~28     ; combout          ;
+; |tyjoq|bo[4]~31    ; |tyjoq|bo[4]~31     ; combout          ;
+; |tyjoq|bo[5]~32    ; |tyjoq|bo[5]~32     ; combout          ;
+; |tyjoq|bo[6]~33    ; |tyjoq|bo[6]~33     ; combout          ;
+; |tyjoq|bo[7]~34    ; |tyjoq|bo[7]~34     ; combout          ;
+; |tyjoq|b[0]~16     ; |tyjoq|b[0]~16      ; combout          ;
+; |tyjoq|c[0]~24     ; |tyjoq|c[0]~24      ; combout          ;
+; |tyjoq|a[0]~8      ; |tyjoq|a[0]~8       ; combout          ;
+; |tyjoq|ao[0]       ; |tyjoq|ao[0]        ; padio            ;
+; |tyjoq|ao[1]       ; |tyjoq|ao[1]        ; padio            ;
+; |tyjoq|bo[0]       ; |tyjoq|bo[0]        ; padio            ;
+; |tyjoq|bo[1]       ; |tyjoq|bo[1]        ; padio            ;
+; |tyjoq|ra[0]       ; |tyjoq|ra[0]~corein ; combout          ;
+; |tyjoq|ra[1]       ; |tyjoq|ra[1]~corein ; combout          ;
+; |tyjoq|we          ; |tyjoq|we~corein    ; combout          ;
+; |tyjoq|wa[0]       ; |tyjoq|wa[0]~corein ; combout          ;
+; |tyjoq|wa[1]       ; |tyjoq|wa[1]~corein ; combout          ;
+; |tyjoq|i[0]        ; |tyjoq|i[0]~corein  ; combout          ;
+; |tyjoq|clk         ; |tyjoq|clk~corein   ; combout          ;
+; |tyjoq|i[1]        ; |tyjoq|i[1]~corein  ; combout          ;
+; |tyjoq|i[4]        ; |tyjoq|i[4]~corein  ; combout          ;
+; |tyjoq|i[5]        ; |tyjoq|i[5]~corein  ; combout          ;
+; |tyjoq|i[6]        ; |tyjoq|i[6]~corein  ; combout          ;
+; |tyjoq|i[7]        ; |tyjoq|i[7]~corein  ; combout          ;
+; |tyjoq|clk~clkctrl ; |tyjoq|clk~clkctrl  ; outclk           ;
+; |tyjoq|we~clkctrl  ; |tyjoq|we~clkctrl   ; outclk           ;
++--------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------+
+; Missing 1-Value Coverage                                ;
++-----------------+--------------------+------------------+
+; Node Name       ; Output Port Name   ; Output Port Type ;
++-----------------+--------------------+------------------+
+; |tyjoq|c[0]     ; |tyjoq|c[0]        ; regout           ;
+; |tyjoq|a[0]     ; |tyjoq|a[0]        ; regout           ;
+; |tyjoq|ao[0]~27 ; |tyjoq|ao[0]~27    ; combout          ;
+; |tyjoq|b[1]     ; |tyjoq|b[1]        ; regout           ;
+; |tyjoq|a[1]     ; |tyjoq|a[1]        ; regout           ;
+; |tyjoq|b[2]     ; |tyjoq|b[2]        ; regout           ;
+; |tyjoq|c[2]     ; |tyjoq|c[2]        ; regout           ;
+; |tyjoq|a[2]     ; |tyjoq|a[2]        ; regout           ;
+; |tyjoq|ao[2]~29 ; |tyjoq|ao[2]~29    ; combout          ;
+; |tyjoq|b[3]     ; |tyjoq|b[3]        ; regout           ;
+; |tyjoq|c[3]     ; |tyjoq|c[3]        ; regout           ;
+; |tyjoq|a[3]     ; |tyjoq|a[3]        ; regout           ;
+; |tyjoq|ao[3]~30 ; |tyjoq|ao[3]~30    ; combout          ;
+; |tyjoq|bo[0]~27 ; |tyjoq|bo[0]~27    ; combout          ;
+; |tyjoq|bo[2]~29 ; |tyjoq|bo[2]~29    ; combout          ;
+; |tyjoq|bo[3]~30 ; |tyjoq|bo[3]~30    ; combout          ;
+; |tyjoq|ao[2]    ; |tyjoq|ao[2]       ; padio            ;
+; |tyjoq|ao[3]    ; |tyjoq|ao[3]       ; padio            ;
+; |tyjoq|bo[2]    ; |tyjoq|bo[2]       ; padio            ;
+; |tyjoq|bo[3]    ; |tyjoq|bo[3]       ; padio            ;
+; |tyjoq|i[2]     ; |tyjoq|i[2]~corein ; combout          ;
+; |tyjoq|i[3]     ; |tyjoq|i[3]~corein ; combout          ;
++-----------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------+
+; Missing 0-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |tyjoq|b[0]     ; |tyjoq|b[0]      ; regout           ;
+; |tyjoq|c[0]     ; |tyjoq|c[0]      ; regout           ;
+; |tyjoq|a[0]     ; |tyjoq|a[0]      ; regout           ;
+; |tyjoq|ao[0]~27 ; |tyjoq|ao[0]~27  ; combout          ;
+; |tyjoq|b[1]     ; |tyjoq|b[1]      ; regout           ;
+; |tyjoq|c[1]     ; |tyjoq|c[1]      ; regout           ;
+; |tyjoq|a[1]     ; |tyjoq|a[1]      ; regout           ;
+; |tyjoq|b[2]     ; |tyjoq|b[2]      ; regout           ;
+; |tyjoq|c[2]     ; |tyjoq|c[2]      ; regout           ;
+; |tyjoq|a[2]     ; |tyjoq|a[2]      ; regout           ;
+; |tyjoq|ao[2]~29 ; |tyjoq|ao[2]~29  ; combout          ;
+; |tyjoq|b[3]     ; |tyjoq|b[3]      ; regout           ;
+; |tyjoq|c[3]     ; |tyjoq|c[3]      ; regout           ;
+; |tyjoq|a[3]     ; |tyjoq|a[3]      ; regout           ;
+; |tyjoq|ao[3]~30 ; |tyjoq|ao[3]~30  ; combout          ;
+; |tyjoq|b[4]     ; |tyjoq|b[4]      ; regout           ;
+; |tyjoq|c[4]     ; |tyjoq|c[4]      ; regout           ;
+; |tyjoq|b[5]     ; |tyjoq|b[5]      ; regout           ;
+; |tyjoq|c[5]     ; |tyjoq|c[5]      ; regout           ;
+; |tyjoq|b[6]     ; |tyjoq|b[6]      ; regout           ;
+; |tyjoq|c[6]     ; |tyjoq|c[6]      ; regout           ;
+; |tyjoq|b[7]     ; |tyjoq|b[7]      ; regout           ;
+; |tyjoq|c[7]     ; |tyjoq|c[7]      ; regout           ;
+; |tyjoq|bo[0]~27 ; |tyjoq|bo[0]~27  ; combout          ;
+; |tyjoq|bo[2]~29 ; |tyjoq|bo[2]~29  ; combout          ;
+; |tyjoq|bo[3]~30 ; |tyjoq|bo[3]~30  ; combout          ;
+; |tyjoq|ao[2]    ; |tyjoq|ao[2]     ; padio            ;
+; |tyjoq|ao[3]    ; |tyjoq|ao[3]     ; padio            ;
+; |tyjoq|ao[4]    ; |tyjoq|ao[4]     ; padio            ;
+; |tyjoq|ao[5]    ; |tyjoq|ao[5]     ; padio            ;
+; |tyjoq|ao[6]    ; |tyjoq|ao[6]     ; padio            ;
+; |tyjoq|ao[7]    ; |tyjoq|ao[7]     ; padio            ;
+; |tyjoq|bo[2]    ; |tyjoq|bo[2]     ; padio            ;
+; |tyjoq|bo[3]    ; |tyjoq|bo[3]     ; padio            ;
+; |tyjoq|bo[4]    ; |tyjoq|bo[4]     ; padio            ;
+; |tyjoq|bo[5]    ; |tyjoq|bo[5]     ; padio            ;
+; |tyjoq|bo[6]    ; |tyjoq|bo[6]     ; padio            ;
+; |tyjoq|bo[7]    ; |tyjoq|bo[7]     ; padio            ;
++-----------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Dec 10 11:12:24 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off tyjoq -c tyjoq
+Info: Using vector source file "C:/Users/pigpigpang/Desktop/愿太阳温暖你的心/数电/实验4/tyjoq/tyjoq.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      48.05 %
+Info: Number of transitions in simulation is 553
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 170 megabytes
+    Info: Processing ended: Tue Dec 10 11:12:24 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

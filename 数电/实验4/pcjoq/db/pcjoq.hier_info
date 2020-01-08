@@ -1,0 +1,43 @@
+|pcjoq
+a[0] => tem~15.DATAB
+a[1] => tem~14.DATAB
+a[2] => tem~13.DATAB
+a[3] => tem~12.DATAB
+a[4] => tem~11.DATAB
+a[5] => tem~10.DATAB
+a[6] => tem~9.DATAB
+a[7] => tem~8.DATAB
+ld => tem~15.OUTPUTSELECT
+ld => tem~14.OUTPUTSELECT
+ld => tem~13.OUTPUTSELECT
+ld => tem~12.OUTPUTSELECT
+ld => tem~11.OUTPUTSELECT
+ld => tem~10.OUTPUTSELECT
+ld => tem~9.OUTPUTSELECT
+ld => tem~8.OUTPUTSELECT
+inc => tem~23.OUTPUTSELECT
+inc => tem~22.OUTPUTSELECT
+inc => tem~21.OUTPUTSELECT
+inc => tem~20.OUTPUTSELECT
+inc => tem~19.OUTPUTSELECT
+inc => tem~18.OUTPUTSELECT
+inc => tem~17.OUTPUTSELECT
+inc => tem~16.OUTPUTSELECT
+clk => tem[7].CLK
+clk => tem[6].CLK
+clk => tem[5].CLK
+clk => tem[4].CLK
+clk => tem[3].CLK
+clk => tem[2].CLK
+clk => tem[1].CLK
+clk => tem[0].CLK
+c[0] <= tem[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= tem[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= tem[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= tem[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= tem[4].DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= tem[5].DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= tem[6].DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= tem[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity yiwei is
+port(fbus,flbus,frbus : in std_logic;
+	 a:in std_logic_vector(7 downto 0);
+	 w:out std_logic_vector(7 downto 0);
+	 cf:out std_logic);
+end yiwei;
+architecture bhv of yiwei is
+begin
+	process(fbus,flbus,frbus,a)
+	begin
+	if fbus='1' then 
+		w<=a;
+		cf<='0';
+	elsif flbus='1' then
+		w<=a(6 downto 0) & a(7);
+		cf<=a(7);
+	elsif frbus='1' then
+		w<=a(0) & a(7 downto 1);
+		cf<=a(0);
+	else
+		w<="ZZZZZZZZ";
+		cf<='0';
+	end if;
+	end process;
+end;

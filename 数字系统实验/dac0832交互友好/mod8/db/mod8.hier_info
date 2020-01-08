@@ -1,0 +1,38 @@
+|mod8
+clk => iq[31].CLK
+clk => iq[30].CLK
+clk => iq[29].CLK
+clk => iq[28].CLK
+clk => iq[27].CLK
+clk => iq[26].CLK
+clk => iq[25].CLK
+clk => iq[24].CLK
+clk => iq[23].CLK
+clk => iq[22].CLK
+clk => iq[21].CLK
+clk => iq[20].CLK
+clk => iq[19].CLK
+clk => iq[18].CLK
+clk => iq[17].CLK
+clk => iq[16].CLK
+clk => iq[15].CLK
+clk => iq[14].CLK
+clk => iq[13].CLK
+clk => iq[12].CLK
+clk => iq[11].CLK
+clk => iq[10].CLK
+clk => iq[9].CLK
+clk => iq[8].CLK
+clk => iq[7].CLK
+clk => iq[6].CLK
+clk => iq[5].CLK
+clk => iq[4].CLK
+clk => iq[3].CLK
+clk => iq[2].CLK
+clk => iq[1].CLK
+clk => iq[0].CLK
+c_out[0] <= iq[0].DB_MAX_OUTPUT_PORT_TYPE
+c_out[1] <= iq[1].DB_MAX_OUTPUT_PORT_TYPE
+c_out[2] <= iq[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

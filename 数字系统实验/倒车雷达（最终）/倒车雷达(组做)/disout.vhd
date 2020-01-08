@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity disout is
+port(average:in integer range 0 to 500;
+     hundred,ten,single:out std_logic_vector(3 downto 0));
+end disout;
+architecture test of disout is
+signal a,b,c:integer;
+begin
+	 a<=(average/100);
+	 hundred<=conv_std_logic_vector(a,4);
+	 b<=((average-a*100)/10);
+	 ten<=conv_std_logic_vector(b,4);
+	 c<=average rem 10;
+	 single<=conv_std_logic_vector(c,4);
+end test;
